@@ -1,0 +1,39 @@
+1) use pip3 to install pipenv inside of our folder
+
+2) use pipenv to install 'pipenv install django djangorestframework django-rest-knox'
+
+3) django-rest-knox - for token authentication
+
+4) to create the django project we say "django-admin startproject leadmanager"
+  i. manage.py file is like the CLI for django (to create migrations, run server)
+
+5) generate django app 'python manage.py startapp leads' - this creates a folder called leads
+
+6) under settings.py in the leadmanager folder
+  i.  In installed apps we have to add our newly crated 'leads' folder & 'rest_framework'
+  ii. We can also change our database configs here aswell
+
+7) setup the data model in the models.py file under the leads folder
+
+8) need to create a migration to add the colums and rows to the database
+  i.   go to terminal and run 'python manage.py makemigrations leads'
+  ii.  this creates leads/migrations/0001_initial.py & db.sqlite3 (I think)
+  iii. now run 'python manage.py migrate'
+      a. This runs all migrations and Django by default had a bunch of migrations to run aswell(creates tables for users and permissions etc)
+9) Source for Django API: https://www.django-rest-framework.org/
+
+10) Serlizer: take our model and turn it into JSON - go to leads and create a file serializers.py
+
+11) create our API so in leads directory create api.py
+  i.   We will create our lead viewset in this file
+  ii.  Allows us to create a CRUD API without specifiying explicite methods for functionality
+  iii. Lookup viewsets to read about it
+
+12) Now we create our URLs
+  i.   leadmanager comes with a root urls file - we edit that first
+  ii.  we tell the roots url file to look at the leads.urls file which we create
+  iii. Here we use the router from rest_framework
+
+13) After setting up routes we can start our server 'python manage.py runserver'
+
+14) Test API through postman
