@@ -1,0 +1,27 @@
+1) Implementation of Redux
+
+2) npm i redux react-redux redux-thunk redux-devtools-extension
+
+3) add a store.js file in src
+
+4) setup rootReducer -: create folder called reducers and add an index.js file in it
+
+5) finish redux setup in App.js file using Provider and store
+
+6) create leads.js in the reducer folder - and the actions type of GET_LEADS
+
+7) create a leads.js file in actions folder to take care of all actions regarding leads
+  i.  will make all of HTTP requests here using axios (can also use fetch)
+  ii. install axios 'npm i axios'
+
+8) setup the leads component so it dispatches the action GET_LEADS to get leads from database
+  i. Once we have the info we map through it as map each lead in a bootstrap table format
+
+9) Now we can setup the DELETE_LEADS action in our leads file in the actions folder
+  i.  https://alligator.io/react/axios-react/
+  ii. Working in the leads- actions and reducers dir as well as the Leads component
+
+
+############################################
+
+10) Time to create the add form component

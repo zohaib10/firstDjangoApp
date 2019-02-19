@@ -1,0 +1,37 @@
+1) In a new tab go to the parent directory "pipenv shell"
+
+2) Go to the backend django project and run this "python manage.py startapp frontend"
+
+3) Make a src folder within fronend and a components within components folder
+  i. then create these :- mkdir -p ./frontend/{static,templates}/frontend
+
+4) the components folder will house all of our components
+  i.  the templates folder will house the index.html single page file to render our components to
+  ii. the static folder will keep all the complied JS - webpack will do that for us
+
+5) go to the root folder and type "npm init -y"
+
+6) npm i -D webpack webpack-cli
+
+7) install babel
+  i. npm i -D @babel/core babel-loader @babel/preset-env @babel/preset-react babel-plugin-transform-class-properties
+
+8) add the .babelec file with the presets and plugins properties
+
+9) create the webpack.config.js file
+
+10) go to package.json file and change scripts field
+
+11) Set up the index.js and App.js files
+
+12) Inside of templates/frontend we create our index.html file
+  i. set up the file with bootstrap etc
+
+13) add the frontend app to the settings.py file
+
+14) in the views file in frontend we render the main index.html file
+
+15) now we have to give it a url?
+  i.   we set up the urls.py file in frontend
+  ii.  now we add this url file ref to our main urls file
+  iii. frontend needs to lead before the leads
