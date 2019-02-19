@@ -1,0 +1,14 @@
+Error Handling & Alerts
+
+1) When we make a bad request we get an error back which we will store in our state and use a library called react-alert to display those errors in our components.
+
+2) Install: npm i react-alert react-alert-template-basic react-transition-group
+  i.  setup react-alert within App.js
+  ii. complete AlertTemplate and AlertProvider setup in App.js
+
+3) After App.js create a file called Alerts.js in components/layout
+  i. After setup import to App.js and wire it
+
+4) Here we setup the GET_ERRORS reducer by creating a errors.js file and the handle the .catch(err) by dispatching the action
+
+5) Now we wire up everything that needs be done in Alerts.js 
