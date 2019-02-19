@@ -11,4 +11,6 @@ Error Handling & Alerts
 
 4) Here we setup the GET_ERRORS reducer by creating a errors.js file and the handle the .catch(err) by dispatching the action
 
-5) Now we wire up everything that needs be done in Alerts.js 
+5) Now we wire up everything that needs be done in Alerts.js
+
+6) We create an action and reducer called messages which saves a message when a new lead is added or deleted. We call it in Alerts.js and show appropriate notifications 
